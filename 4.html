@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>This is para 0</p>
+    <br>
+    <p>This is para 1</p>
+    <p>This is para 2</p>
+    <p>This is para 3</p>
+
+    <button onclick="buttonThing()">Click Me</button>
+
+    <script>
+
+
+    
+     function buttonThing()
+     {
+     var record = document.getElementsByTagName("p");
+
+     record[0].style.fontSize=10;
+     record[1].style.color="red";
+     record[2].style.fontWeight="bold";
+     record[3].style.fontStyle="italic";
+    
+     }
+
+    </script>
+    
+</body>
+</html>

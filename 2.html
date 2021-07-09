@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="b1" type="radio" name="g1" value="Samsung" >Samsung</input>
+    <input id="b2" type="radio" name="g1" value="Apple">Apple</input>
+    <br><br>
+    <button onclick="buttonClicked()">Click Me</button>
+
+
+    <script type="text/javascript">
+
+    function buttonClicked(){
+    
+    var str1 = document.getElementById("b1");
+    var str2 = document.getElementById("b2");
+
+    if(str1.checked===true)
+    alert(`You have selected: ${str1.value}`);
+    else if(str2.checked===true)
+    alert(`You have selected: ${str2.value}`);
+    else
+    alert("You haven't selected any button");
+
+    }
+    
+    </script>
+    
+</body>
+</html>
